@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export default function Login(props) {
+  const navigate = useNavigate();
   const emailId = React.createRef();
   const password = React.createRef();
   const [showPassword, setShowPassword] = useState(false);
@@ -20,8 +21,9 @@ export default function Login(props) {
         userList[i].email_id === emailId.current.value &&
         userList[i].password === password.current.value
       ) {
-        console.log("Login Success");
         setError("");
+        props.login(true);
+        navigate("/dashboard");
       } else if (
         userList[i].email_id === emailId.current.value &&
         userList[i].password !== password.current.value
