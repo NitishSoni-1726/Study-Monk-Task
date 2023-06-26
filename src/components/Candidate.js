@@ -11,36 +11,45 @@ export default function Candidate(props) {
               src={props.individualData.profile}
               alt="..."
               className="bg-light"
-              style={{ width: "70px", height: "70px", borderRadius: "50%" }}
+              style={{ width: "50px", height: "50px", borderRadius: "50%" }}
             ></img>
           </div>
           <div
-            style={{ width: "25%", fontSize: "20px" }}
-            className="text-start ps-3"
+            className="text-start"
+            style={{
+              width: "22%",
+              fontSize: "20px",
+              padding: "20px",
+              paddingLeft: "30px",
+            }}
           >
             {props.individualData.name}
           </div>
           <div
-            style={{ width: "10%", fontSize: "20px" }}
+            style={{
+              width: "13%",
+              fontSize: "20px",
+              paddingLeft: "90px",
+            }}
             className="text-center"
           >
             {props.individualData.experience} Years
           </div>
           <div
-            style={{ width: "25%", fontSize: "20px" }}
-            className="text-center ps-4"
+            style={{ width: "25%", fontSize: "20px", paddingLeft: "130px" }}
+            className="text-center"
           >
             {props.individualData.tags}
           </div>
           <div
-            style={{ width: "15%", fontSize: "20px" }}
-            className="text-center ps-4"
+            style={{ width: "15%", fontSize: "20px", paddingLeft: "150px" }}
+            className="text-center"
           >
             {props.individualData.location}
           </div>
           <div
-            style={{ width: "15%", fontSize: "20px" }}
-            className="text-center ps-4"
+            style={{ width: "15%", fontSize: "20px", paddingLeft: "70px" }}
+            className="text-center"
           >
             <a
               className="p-2"

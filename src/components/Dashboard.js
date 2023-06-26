@@ -30,6 +30,13 @@ export default function Dashboard() {
     setDescendingSort(true);
     setAscendingSort(false);
   }
+  function handleFilter(e) {
+    if (e.target.value === "All Candidate") {
+      handleAllCandidates();
+    } else {
+      handleSavedFilter();
+    }
+  }
   let filtereddata = [...data];
   if (savedFilter) {
     filtereddata = [];
@@ -115,34 +122,34 @@ export default function Dashboard() {
               <i className="fa fa-search" aria-hidden="true"></i>
             </button>
           </div>
-          <li className="me-4" style={{ listStyle: "none" }}>
+          <select
+            className="btn btn-secondary bg-black btn-lg me-4"
+            onChange={handleFilter}
+          >
+            <option value="All Candidate" onClick={handleAllCandidates}>
+              All Candidate
+            </option>
+            <option value="Saved Candidate" onClick={handleSavedFilter}>
+              Saved Candidate
+            </option>
+          </select>
+          <h4 style={{ margin: "0" }}>Sort By Experience</h4>
+          <li className="ms-2 me-1" style={{ listStyle: "none" }}>
             <button
-              className="btn btn-success btn-lg"
-              onClick={handleAllCandidates}
+              className="btn btn-secondary btn-sm"
+              onClick={handleAscending}
             >
-              All Candidates
-            </button>
-          </li>
-          <li className="me-4" style={{ listStyle: "none" }}>
-            <button
-              className="btn btn-warning btn-lg"
-              onClick={handleSavedFilter}
-            >
-              Saved Candidates <i className="fa fa-bookmark"></i>
-            </button>
-          </li>
-          <h4 style={{ margin: "0" }}>Work Experience</h4>
-          <li className="ms-2 me-2" style={{ listStyle: "none" }}>
-            <button className="btn btn-secondary" onClick={handleAscending}>
               <i className="fa fa-arrow-up"></i>
             </button>
           </li>
-          <li className="ms-2 me-2" style={{ listStyle: "none" }}>
-            <button className="btn btn-secondary" onClick={handleDescending}>
+          <li className="ms-1 me-2" style={{ listStyle: "none" }}>
+            <button
+              className="btn btn-secondary btn-sm"
+              onClick={handleDescending}
+            >
               <i className="fa fa-arrow-down"></i>
             </button>
           </li>
-          <li className="ms-2 me-2" style={{ listStyle: "none" }}></li>
         </ul>
       </div>
       <div
@@ -156,30 +163,41 @@ export default function Dashboard() {
       >
         <div className="text-light w-100 d-flex flex-column align-items-center m-0">
           <div
-            className="d-flex p-3 w-100 bg-black bg-opacity-25 m-0"
-            style={{ position: "fixed" }}
+            className="d-flex w-100 bg-black bg-opacity-25 m-0"
+            style={{ position: "fixed", borderBottom: "1px solid white" }}
           >
-            <h6 style={{ width: "10%" }} className="text-center">
+            <h6
+              style={{ width: "10%", borderRight: "1px solid white" }}
+              className="text-center p-3"
+            >
               Profile
             </h6>
-            <h6>|</h6>
-            <h6 style={{ width: "25%" }} className="text-center">
+
+            <h6
+              style={{ width: "22%", borderRight: "1px solid white" }}
+              className="text-center p-3"
+            >
               Candidate Name
             </h6>
-            <h6>|</h6>
-            <h6 style={{ width: "10%" }} className="text-center">
+            <h6
+              style={{ width: "13%", borderRight: "1px solid white" }}
+              className="text-center p-3"
+            >
               Work Experience
             </h6>
-            <h6>|</h6>
-            <h6 style={{ width: "25%" }} className="text-center">
+            <h6
+              style={{ width: "25%", borderRight: "1px solid white" }}
+              className="text-center p-3"
+            >
               Tags
             </h6>
-            <h6>|</h6>
-            <h6 style={{ width: "15%" }} className="text-center">
+            <h6
+              style={{ width: "15%", borderRight: "1px solid white" }}
+              className="text-center p-3"
+            >
               Location
             </h6>
-            <h6>|</h6>
-            <h6 style={{ width: "15%" }} className="text-center">
+            <h6 style={{ width: "15%" }} className="text-center p-3">
               Socials
             </h6>
           </div>
@@ -190,19 +208,23 @@ export default function Dashboard() {
               height: "70vh",
               overflowY: "scroll",
               width: "100%",
+              display: "flex",
+              flexDirection: "column",
             }}
           >
-            {filtereddata.map((candidate, index) => {
-              return (
-                <Candidate
-                  key={index}
-                  individualData={candidate}
-                  onFavClick={() => {
-                    handleFavClick(candidate.id);
-                  }}
-                />
-              );
-            })}
+            <div>
+              {filtereddata.map((candidate, index) => {
+                return (
+                  <Candidate
+                    key={index}
+                    individualData={candidate}
+                    onFavClick={() => {
+                      handleFavClick(candidate.id);
+                    }}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

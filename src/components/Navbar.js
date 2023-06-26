@@ -25,7 +25,7 @@ export default function Navbar(props) {
       <Link
         to="/"
         style={{
-          letterSpacing: "15px",
+          letterSpacing: "8px",
           margin: "0",
           padding: "0",
           textDecoration: "none",

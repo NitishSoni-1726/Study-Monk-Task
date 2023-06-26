@@ -60,6 +60,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 5,
     profile: "https://randomuser.me/api/portraits/men/5.jpg",
     name: "Dharma",
     experience: 0,
@@ -74,11 +75,12 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 6,
     profile: "https://randomuser.me/api/portraits/women/6.jpg",
     name: "Anamika Paul",
     experience: 1,
     tags: "Food Quality Testing",
-    location: "Mandala Artist",
+    location: "Tezpur",
     social: {
       instagram: "link",
       linkedin: "Link",
@@ -88,6 +90,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 7,
     profile: "https://randomuser.me/api/portraits/men/7.jpg",
     name: "Ajju Alam",
     experience: 2,
@@ -102,6 +105,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 8,
     profile: "https://randomuser.me/api/portraits/women/8.jpg",
     name: "Aayushi Jain",
     experience: 2,
@@ -116,6 +120,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 9,
     profile: "https://randomuser.me/api/portraits/women/9.jpg",
     name: "Aisha Sharma",
     experience: 6,
@@ -130,6 +135,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 10,
     profile: "https://randomuser.me/api/portraits/men/10.jpg",
     name: "Himanshu Kumar",
     experience: 7,
@@ -144,6 +150,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 11,
     profile: "https://randomuser.me/api/portraits/men/11.jpg",
     name: "Pranay Agrawal",
     experience: 1,
@@ -158,6 +165,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 12,
     profile: "https://randomuser.me/api/portraits/women/12.jpg",
     name: "Nidhi Tiwari",
     experience: 8,
@@ -172,6 +180,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 13,
     profile: "https://randomuser.me/api/portraits/men/13.jpg",
     name: "Ashish Kumar",
     experience: 9,
@@ -186,6 +195,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 14,
     profile: "https://randomuser.me/api/portraits/women/14.jpg",
     name: "Payal Baul",
     experience: 5,
@@ -200,6 +210,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 15,
     profile: "https://randomuser.me/api/portraits/women/15.jpg",
     name: "Pratiksha Gogoi",
     experience: 4,
@@ -214,6 +225,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 16,
     profile: "https://randomuser.me/api/portraits/men/16.jpg",
     name: "Hrithik Patodia",
     experience: 4,
@@ -228,6 +240,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 17,
     profile: "https://randomuser.me/api/portraits/women/17.jpg",
     name: "Puja Sarda",
     experience: 2,
@@ -242,6 +255,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 18,
     profile: "https://randomuser.me/api/portraits/women/18.jpg",
     name: "Isha Jain",
     experience: 8,
@@ -256,6 +270,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 19,
     profile: "https://randomuser.me/api/portraits/women/19.jpg",
     name: "Gauri Ruhal",
     experience: 11,
@@ -270,6 +285,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 20,
     profile: "https://randomuser.me/api/portraits/women/20.jpg",
     name: "Sushree Ananya Nayak",
     experience: 15,
@@ -284,6 +300,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 21,
     profile: "https://randomuser.me/api/portraits/men/21.jpg",
     name: "N Satwik Kumar Chaudhary",
     experience: 8,
@@ -298,6 +315,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 22,
     profile: "https://randomuser.me/api/portraits/men/22.jpg",
     name: "Chandan Jhawar",
     experience: 0,
@@ -312,6 +330,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 23,
     profile: "https://randomuser.me/api/portraits/men/23.jpg",
     name: "Tarun Bhatti",
     experience: 0,
@@ -326,6 +345,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 24,
     profile: "https://randomuser.me/api/portraits/men/24.jpg",
     name: "Vinit Bothra",
     experience: 4,
@@ -340,6 +360,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 25,
     profile: "https://randomuser.me/api/portraits/women/25.jpg",
     name: "Kaveri Sharma",
     experience: 4,
@@ -354,6 +375,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 26,
     profile: "https://randomuser.me/api/portraits/women/26.jpg",
     name: "Priya Baruah",
     experience: 3,
@@ -368,6 +390,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 27,
     profile: "https://randomuser.me/api/portraits/women/27.jpg",
     name: "Mridushmita Baruah",
     experience: 7,
@@ -382,6 +405,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 28,
     profile: "https://randomuser.me/api/portraits/men/28.jpg",
     name: "Atul Sharma",
     experience: 6,
@@ -396,6 +420,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 29,
     profile: "https://randomuser.me/api/portraits/men/29.jpg",
     name: "Sahil Das",
     experience: 9,
@@ -410,6 +435,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 30,
     profile: "https://randomuser.me/api/portraits/men/30.jpg",
     name: "Tanmay Bhat",
     experience: 10,
@@ -424,6 +450,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 31,
     profile: "https://randomuser.me/api/portraits/women/31.jpg",
     name: "Kashvi Hiranandani",
     experience: 11,
@@ -438,6 +465,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 32,
     profile: "https://randomuser.me/api/portraits/men/32.jpg",
     name: "Akshay Rana",
     experience: 12,
@@ -452,6 +480,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 33,
     profile: "https://randomuser.me/api/portraits/women/33.jpg",
     name: "Sonam Bajwa",
     experience: 4,
@@ -466,6 +495,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 34,
     profile: "https://randomuser.me/api/portraits/men/34.jpg",
     name: "Atul Bhuyan",
     experience: 1,
@@ -480,6 +510,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 35,
     profile: "https://randomuser.me/api/portraits/men/35.jpg",
     name: "Tarun Kothari",
     experience: 1,
@@ -494,6 +525,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 36,
     profile: "https://randomuser.me/api/portraits/men/36.jpg",
     name: "Kunal Jain",
     experience: 0,
@@ -508,6 +540,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 37,
     profile: "https://randomuser.me/api/portraits/women/37.jpg",
     name: "Raksha Jalan",
     experience: 0,
@@ -522,6 +555,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 38,
     profile: "https://randomuser.me/api/portraits/women/38.jpg",
     name: "Vridhi Jain",
     experience: 12,
@@ -536,6 +570,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 39,
     profile: "https://randomuser.me/api/portraits/women/39.jpg",
     name: "Mariya Begum",
     experience: 12,
@@ -550,6 +585,7 @@ export const CandidateData = [
     saved: false,
   },
   {
+    id: 40,
     profile: "https://randomuser.me/api/portraits/men/40.jpg",
     name: "Paras Gupta",
     experience: 11,
