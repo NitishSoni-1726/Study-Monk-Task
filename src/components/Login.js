@@ -16,6 +16,10 @@ export default function Login(props) {
   function handleLogin(event) {
     event.preventDefault();
     const userList = props.userData;
+    console.log(userList[0]);
+    if (userList[0] === undefined) {
+      setError("No User Found");
+    }
     for (let i = 0; i < userList.length; i++) {
       if (
         userList[i].email_id === emailId.current.value &&
@@ -30,6 +34,7 @@ export default function Login(props) {
       ) {
         setError("Invalid Password");
       } else {
+        console.log("hello");
         setError("No User Found");
       }
     }

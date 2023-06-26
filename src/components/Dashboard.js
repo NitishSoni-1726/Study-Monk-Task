@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Candidate from "./Candidate";
 import { CandidateData } from "./data";
 export default function Dashboard() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(CandidateData);
   const [ascendingSort, setAscendingSort] = useState(false);
   const [descendingSort, setDescendingSort] = useState(false);
   const [savedFilter, setSavedFilter] = useState(false);
   const [searchStr, setSearchStr] = useState("");
-  useEffect(() => {
-    setData(CandidateData);
-  }, []);
+
   function handleSearch(event) {
     setSearchStr(event.target.value);
   }
@@ -40,7 +38,6 @@ export default function Dashboard() {
         filtereddata.push(data[i]);
       }
     }
-    console.log(filtereddata);
   }
   if (ascendingSort) {
     for (let i = 1; i < filtereddata.length; i++) {
@@ -79,6 +76,13 @@ export default function Dashboard() {
         filtereddata.push(filteredDataTemp[i]);
       }
     }
+  }
+
+  function handleFavClick(id) {
+    const indexToToggle = data.findIndex((candidate) => candidate.id === id);
+
+    data[indexToToggle].saved = !data[indexToToggle].saved;
+    setData([...data]);
   }
 
   return (
@@ -189,7 +193,15 @@ export default function Dashboard() {
             }}
           >
             {filtereddata.map((candidate, index) => {
-              return <Candidate key={index} individualData={candidate} />;
+              return (
+                <Candidate
+                  key={index}
+                  individualData={candidate}
+                  onFavClick={() => {
+                    handleFavClick(candidate.id);
+                  }}
+                />
+              );
             })}
           </div>
         </div>

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import quality from "./assets/quality.png";
+import attract from "./assets/attract.png";
+import manage from "./assets/manage.png";
 export default function Register(props) {
   const navigate = useNavigate();
   const [error, setError] = useState("");
@@ -54,10 +57,60 @@ export default function Register(props) {
           flexDirection: "column",
         }}
       >
-        <h1 style={{ letterSpacing: "10px" }}>Start Hiring Your Best Team</h1>
+        <h1 style={{ letterSpacing: "10px" }}>
+          <span className="text-danger">Start Hiring </span>Your Best Team
+        </h1>
         <h2 style={{ wordSpacing: "5px" }}>
           This platform will help you reach your hiring goals
         </h2>
+        <div className="mt-5">
+          <div className="d-flex flex-column align-items-center mt-2">
+            <img
+              src={attract}
+              alt="..."
+              style={{ width: "50px", height: "50px" }}
+            ></img>
+            <h2 className="text-success">Attract quality applicants</h2>
+            <p
+              style={{ width: "70%", wordSpacing: "5px", fontSize: "20px" }}
+              className="text-center"
+            >
+              Easily market your open roles across multiple channels to connect
+              with top job seekers and increase your applicant flow
+            </p>
+          </div>
+          <div className="d-flex flex-column align-items-center mt-2">
+            <img
+              src={quality}
+              alt="..."
+              style={{ width: "50px", height: "50px" }}
+            ></img>
+            <h2 className="text-primary">Hire top performers</h2>
+            <p
+              style={{ width: "70%", wordSpacing: "5px", fontSize: "20px" }}
+              className="text-center"
+            >
+              Hire top performers Run a more efficient and engaging hiring
+              process so you can identify top candidates and quickly hire the
+              best
+            </p>
+          </div>
+          <div className="d-flex flex-column align-items-center mt-2">
+            <img
+              src={manage}
+              alt="..."
+              style={{ width: "50px", height: "50px" }}
+            ></img>
+            <h2 className="text-warning">Manage new hires</h2>
+            <p
+              style={{ width: "70%", wordSpacing: "5px", fontSize: "20px" }}
+              className="text-center"
+            >
+              Drive productivity and ensure compliance post-hire with an
+              all-in-one suite of employee management tools
+            </p>
+          </div>
+        </div>
       </div>
       <div
         style={{

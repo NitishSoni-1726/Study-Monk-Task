@@ -7,8 +7,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Dashboard from "./components/Dashboard";
 function App() {
-  const [registeredUser, setRegisteredUser] = useState([]);
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [registeredUser, setRegisteredUser] = useState([
+    {
+      email_id: "demo@demo.com",
+      password: "demo1234",
+      company: "Demo Corps",
+    },
+  ]);
+  const [loggedIn, setLoggedIn] = useState(false);
   return (
     <Router>
       <div>
